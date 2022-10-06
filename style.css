@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+/*  */
+:root {
+    --main_font:'Manrope', sans-serif;
+    --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+    --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+    --Grayish_Blue: hsl(212, 23%, 69%);
+    --Light_Grayish_Blue: hsl(210, 46%, 95%);
+    
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+body{
+    min-height: 100%;
+    max-width: 100%;
+    background-color: var(--Light_Grayish_Blue);
+    font-family:var(--main_font);
+    
+}
+
+.container{
+    margin:5em auto;
+    width:90%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: .1rem .1rem .1rem rgba(0,0,0,.3);
+    max-width: 1000px;
+
+
+}
+
+.container img{
+    width:100%;
+    
+}
+.typo{
+    padding:1.2rem 1.5rem;
+}
+.typo h4{
+    font-size: 1.1rem;
+    color:var(--Very_Dark_Grayish_Blue);
+    
+    
+}
+.typo p{
+    font-size:.9rem;
+    margin-top:.7rem;
+    word-spacing: 1px;
+
+
+    color:var(--Desaturated_Dark_Blue);
+}
+.footer{
+    display: flex;
+    width:85%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding:1rem 0;
+
+}
+.michelle img{
+    width: 15%;
+    border-radius: 50%;
+
+
+}
+
+#share_img{
+    width: 25px;
+    cursor: pointer;
+    
+
+}
+.footer_icons{
+    color:white;
+    background-color:rgb(73, 85, 105)
+    ;
+    display: flex;
+    align-items: center;
+    padding: 2px 16px;
+    border-radius: 8px;
+    position: relative;
+    bottom:35px;
+    left:70px;
+
+
+}
+.hide{
+    display: none;
+}
+
+.footer_icons > span,p{
+    padding:8px;
+
+
+    color: rgba(255,255,255,.6);
+    
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        display:flex;
+        
+    }
+    .container img{
+        height: 100%;
+       
+    }
+   .typo_section{
+ 
+    width:98%;
+    margin:auto ;
+
+   }
+
+   .typo h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    }
+    .typo p{
+        font-size:1rem;
+    }
+}
+@media only screen and (max-width:950px) {
+    .footer_icons{
+        position: relative;
+        bottom: 40px;
+ 
+
+    }
+    .footer_icons> span{
+        width:30px;
+    }
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
